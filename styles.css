@@ -1,0 +1,22 @@
+/* estilos.css */
+
+body {
+    background-color: #ffcccc; /* Fondo rosado */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #logo {
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  #texto {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  #irAlCatalogo {
+    font-size: 20px;
+  }
+  

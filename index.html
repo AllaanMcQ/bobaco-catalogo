@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pantalla Inicial</title>
+  <!-- Agrega el enlace al archivo CSS de Bootstrap para el color de fondo -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #ffcccc; /* Fondo rosado */
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      max-width: 400px;
+      margin-bottom: 20px;
+    }
+
+    #texto {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    #irAlCatalogo {
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Contenedor para logotipos -->
+<div style="display: flex; flex-direction: column; align-items: center;">
+  <!-- Logotipo e imagen -->
+  <img class="logo" src="1.png" alt="Logotipo 1">
+  <img class="logo" src="2.png" alt="Logotipo 2">
+</div>
+
+<!-- Texto -->
+<p id="texto">¡Bienvenido a nuestra catalogo virtual! Descubre nuestra amplia selección de productos.</p>
+
+<!-- Botón para ir al catálogo virtual -->
+<a id="irAlCatalogo" class="btn btn-primary" href="/catalogo/catalogo.html" role="button">Ir al Catálogo Virtual</a>
+
+</body>
+</html>

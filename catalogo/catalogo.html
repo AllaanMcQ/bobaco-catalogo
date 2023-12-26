@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Productos</title>
+  <!-- Enlace al archivo CSS de estilos -->
+  <link rel="stylesheet" href="tu-archivo-de-estilos.css">
+
+  <!-- Enlace al archivo CSS de Bootstrap para el botón de descarga -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Contenido del catálogo -->
+<div class="container">
+  <div class="row">
+    <!-- Sección de imágenes del catálogo -->
+    <div class="col-md-9">
+      <div class="catalogo-item">
+        <img src="1.png" alt="Producto 1">
+      </div>
+      <div class="catalogo-item">
+        <img src="2.png" alt="Producto 2">
+      </div>
+      <div class="catalogo-item">
+        <img src="3.png" alt="Producto 3">
+      </div>
+      <div class="catalogo-item">
+        <img src="4.png" alt="Producto 4">
+      </div>
+      <!-- Agrega más elementos de catálogo según sea necesario -->
+    </div>
+
+    <!-- Sección del botón para descargar PDF -->
+    <div class="col-md-3">
+      <button id="descargarPdf" class="btn btn-primary btn-block">Descargar PDF</button>
+    </div>
+  </div>
+</div>
+
+<style>
+  #descargarPdf {
+    margin-top: 20px; /* Ajusté la distancia superior del botón */
+  }
+
+  /* Estilos para centrar las imágenes en catalogo-item */
+  .catalogo-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px; /* Ajusta la altura según sea necesario */
+    border: 1px solid #ddd; /* Agrega un borde para visualización */
+    margin-bottom: 10px; /* Ajusta el margen inferior según sea necesario */
+  }
+
+  .catalogo-item img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  /* Estilos para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .catalogo-item {
+      height: auto; /* Cambia la altura a automática para que se ajuste al contenido */
+    }
+  }
+</style>
+
+<!-- Scripts al final del cuerpo para mejorar el rendimiento de carga -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Script para descargar el PDF -->
+<!-- Script para descargar el PDF -->
+<!-- Script para descargar el PDF y redirigir a la página después de la descarga -->
+<script>
+  document.getElementById('descargarPdf').addEventListener('click', function() {
+    // Redirige al archivo PDF en la misma carpeta que el HTML
+    window.location.href = 'bocaboCatalogo.pdf';
+    
+    // Espera unos segundos antes de redirigir (ajusta según sea necesario)
+    setTimeout(function() {
+      window.location.href = 'https://bocabo.cl/catalogo/catalogo.html';
+    }, 2000); // Redirige después de 2 segundos (ajusta según sea necesario)
+  });
+</script>
+
+  
+
+</body>
+</html>
